@@ -81,58 +81,25 @@
     <Compile Include="Other\Animated.cs" />
     <Compile Include="Other\Camera.cs" />
     <Compile Include="Other\Console.cs" />
-    <Compile Include="Types\Line.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Other\Controler.cs" />
     <Compile Include="Other\MathF.cs" />
+    <Compile Include="Other\Path.cs" />
+    <Compile Include="Other\Renderer.cs" />
     <Compile Include="Types\Pixel32bppRGBA.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Other\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Other\Property.cs" />
-    <Compile Include="Forms\PropertyModifier.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Forms\PropertySelecter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\PropertySelecter.Designer.cs">
-      <DependentUpon>PropertySelecter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Other\Renderer.cs" />
-    <Compile Include="Forms\RendererCreator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\RendererCreator.Designer.cs">
-      <DependentUpon>RendererCreator.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Types\Textures.cs" />
-    <Compile Include="Forms\TimeLine.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\TimeLine.Designer.cs">
-      <DependentUpon>TimeLine.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Types\Poly.cs" />
-    <Compile Include="Forms\VariableCreator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\VariableCreator.Designer.cs">
-      <DependentUpon>VariableCreator.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Types\Quaternion.cs" />
     <Compile Include="Types\VectorFloat2D.cs" />
     <Compile Include="Types\VectorFloat3D.cs" />
     <Compile Include="Types\VectorInt2D.cs" />
-    <Compile Include="Forms\VideoRenderForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\VideoRenderForm.Designer.cs">
-      <DependentUpon>VideoRenderForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,21 +113,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\PropertySelecter.resx">
-      <DependentUpon>PropertySelecter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\RendererCreator.resx">
-      <DependentUpon>RendererCreator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\TimeLine.resx">
-      <DependentUpon>TimeLine.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VariableCreator.resx">
-      <DependentUpon>VariableCreator.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\VideoRenderForm.resx">
-      <DependentUpon>VideoRenderForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -8,6 +8,7 @@ namespace PreviewMaker3D
 {
     public class Project
     {
-        public List<Animated> scene;
+        public List<Animated> scene = new List<Animated>();
+        public Camera FreeCam = default;
     }
 }

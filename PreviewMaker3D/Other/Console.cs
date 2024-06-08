@@ -49,8 +49,8 @@ namespace PreviewMaker3D
 
         void Add(string[] input)
         {
-            if (input[1] == "Cube")
-                mainForm.CreateCube();
+            //if (input[1] == "Cube")
+            //    mainForm.CreateCube();
         }
     }
 }

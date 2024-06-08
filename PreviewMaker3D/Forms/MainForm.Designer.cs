@@ -50,7 +50,6 @@ namespace PreviewMaker3D
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.openglControl = new SharpGL.OpenGLControl();
-            this.timeLine = new PreviewMaker3D.TimeLine();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -109,7 +108,6 @@ namespace PreviewMaker3D
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton6.Text = "Create Object";
-            this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
             // toolStripButton12
             // 
@@ -119,7 +117,6 @@ namespace PreviewMaker3D
             this.toolStripButton12.Name = "toolStripButton12";
             this.toolStripButton12.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton12.Text = "Create Point";
-            this.toolStripButton12.Click += new System.EventHandler(this.toolStripButton12_Click);
             // 
             // toolStripButton13
             // 
@@ -129,7 +126,6 @@ namespace PreviewMaker3D
             this.toolStripButton13.Name = "toolStripButton13";
             this.toolStripButton13.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton13.Text = "Create Line";
-            this.toolStripButton13.Click += new System.EventHandler(this.toolStripButton13_Click);
             // 
             // toolStripButton5
             // 
@@ -139,7 +135,6 @@ namespace PreviewMaker3D
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton5.Text = "Create Polygone";
-            this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
             // toolStripButton1
             // 
@@ -149,7 +144,6 @@ namespace PreviewMaker3D
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton1.Text = "Create Cube";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton2
             // 
@@ -159,7 +153,6 @@ namespace PreviewMaker3D
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton2.Text = "Create Cilinder";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
@@ -169,7 +162,6 @@ namespace PreviewMaker3D
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton3.Text = "Create Cone";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton4
             // 
@@ -179,7 +171,6 @@ namespace PreviewMaker3D
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton4.Text = "Create Sphere";
-            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // toolStripSeparator1
             // 
@@ -194,7 +185,6 @@ namespace PreviewMaker3D
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton7.Text = "Add Texture";
-            this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
             // toolStripButton8
             // 
@@ -204,7 +194,6 @@ namespace PreviewMaker3D
             this.toolStripButton8.Name = "toolStripButton8";
             this.toolStripButton8.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton8.Text = "Render Image";
-            this.toolStripButton8.Click += new System.EventHandler(this.toolStripButton8_Click);
             // 
             // toolStripButton9
             // 
@@ -214,7 +203,6 @@ namespace PreviewMaker3D
             this.toolStripButton9.Name = "toolStripButton9";
             this.toolStripButton9.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton9.Text = "Render Video";
-            this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
             // 
             // toolStripButton10
             // 
@@ -224,7 +212,6 @@ namespace PreviewMaker3D
             this.toolStripButton10.Name = "toolStripButton10";
             this.toolStripButton10.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton10.Text = "Save";
-            this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
             // 
             // toolStripButton11
             // 
@@ -234,7 +221,6 @@ namespace PreviewMaker3D
             this.toolStripButton11.Name = "toolStripButton11";
             this.toolStripButton11.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton11.Text = "Load";
-            this.toolStripButton11.Click += new System.EventHandler(this.toolStripButton11_Click);
             // 
             // splitContainer1
             // 
@@ -270,7 +256,6 @@ namespace PreviewMaker3D
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.Controls.Add(this.timeLine);
             this.splitContainer2.Size = new System.Drawing.Size(767, 502);
             this.splitContainer2.SplitterDistance = 378;
             this.splitContainer2.TabIndex = 0;
@@ -295,15 +280,6 @@ namespace PreviewMaker3D
             this.openglControl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.openglControl1_MouseDown);
             this.openglControl.MouseMove += new System.Windows.Forms.MouseEventHandler(this.openglControl1_MouseMove);
             this.openglControl.MouseUp += new System.Windows.Forms.MouseEventHandler(this.openglControl1_MouseUp);
-            // 
-            // timeLine
-            // 
-            this.timeLine.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.timeLine.Location = new System.Drawing.Point(0, 0);
-            this.timeLine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.timeLine.Name = "timeLine";
-            this.timeLine.Size = new System.Drawing.Size(767, 120);
-            this.timeLine.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -359,7 +335,6 @@ namespace PreviewMaker3D
             this.toolStripButton14.Name = "toolStripButton14";
             this.toolStripButton14.Size = new System.Drawing.Size(29, 28);
             this.toolStripButton14.Text = "Add from file";
-            this.toolStripButton14.Click += new System.EventHandler(this.toolStripButton14_Click);
             // 
             // MainForm
             // 
@@ -389,7 +364,6 @@ namespace PreviewMaker3D
         private System.Windows.Forms.ToolStrip toolStrip;
         private SharpGL.OpenGLControl openglControl;
         private System.Windows.Forms.Timer timer;
-        private TimeLine timeLine;
 
         #endregion
 
